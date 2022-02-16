@@ -1,0 +1,507 @@
+* {
+    margin: 0px;
+    padding: 0px;   
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 29px;
+}
+
+header {
+    padding: 50px 40px 30px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+header .messageHead {
+    font-size: 29px;
+    text-align: center;
+}
+
+.messageHead span {
+    margin: 0px 5px 0px 0px;
+    line-height: 45px;
+    text-align: center;
+}
+
+
+body {
+    background-color: #000000;
+    color: white;
+}
+
+main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.p1 {
+    max-width: 1100px;
+    width: 100%;
+}
+
+/* colors */
+
+.orangeT {
+    text-transform: uppercase;
+    color: #ffff00;
+    font-weight: 700;
+}
+
+/* minMesage */
+
+.minMesage {
+    font-size: 12px;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.minMesage * {
+    line-height: 20px;
+}
+
+.minMesage strong {
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.videoAmost {
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.videoAmost iframe {
+    width: 90vw;
+    max-width: 780px !important;
+    max-height: 430px;
+    height: 45vw;
+}
+
+/* buttonCompra */
+
+.buttonCompra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.buttonCompra a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.buttonCompra button {
+    width: 100%;
+    max-width: 550px;
+    min-height: 60px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    background: rgb(0, 199, 0);
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* paysmode */
+
+.paysmode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.paysmode img {
+    width: 90%;
+    max-width: 450px;
+}
+
+
+
+/* screen 2 */
+
+.p2 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 40px;
+    width: 100%;
+}
+
+.orangeT2 {
+    color: #ffcc00;   
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 0px 0px 35px 0px;
+}
+
+.infoP2 {
+    width: 100%;
+    max-width: 500px;
+    flex-shrink: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+.infoP2 p {
+    line-height: 25px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.p2 .part1Img {
+    padding: 30px;
+}
+
+.p2 img {
+    width: 100%;
+    min-width: 200px;
+    max-width: 450px;
+    border-radius: 100%;
+}
+
+@media (max-width: 900px) {
+    .p2 {
+        flex-direction: column;
+    }
+}
+
+/* p3 */
+
+.p3 {
+    background-color: #000000;
+    padding: 30px;
+}
+
+.p3 .titleP3 {
+    color: yellow;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0px 0px  40px 0px;
+}
+
+.p3 * {
+    line-height: 25px;
+    text-align: center;
+}
+
+
+/* p4 */
+
+.p4ext {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p4 {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    color: black;
+    max-width: 1100px;
+}
+
+.p4 .viewData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.viewData .iconExt {
+    padding: 40px 20px;
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+}
+
+.iconExt .icoP4 {
+    width: 120px;
+    height: 120px;
+    background-color: #EFDD05;
+    border-radius: 100%;
+    flex-shrink: 0;
+}
+
+.titleP4 {
+    font-weight: bold;
+    font-size: 19px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.dataP4 {
+    line-height: 25px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .p4 {
+        flex-direction: column;
+    }
+}
+
+
+/* p5 */
+
+.p5 {
+    display: flex;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.p5 .titleP3{
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+.p5 span {
+    color: yellow;
+}
+
+/* depoiments */
+
+.depoiments {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    color: black;
+}
+
+
+.depoiment {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.videoDeep {
+    border: 1px solid;
+    width: 400px;
+    height: 250px;
+    border-radius: 40px;
+    border: 10px solid yellow;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.videoDeep iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.nameD {
+    font-size: 28px;
+    margin: 20px 0px;
+    font-weight: bold;
+}
+
+.depoiment .data {
+    margin: 20px;
+} 
+
+
+@media (max-width: 720px) {
+    .depoiment {
+        flex-direction: column-reverse;
+    }
+
+    .videoDeep {
+        width: 90vw;
+        height: 45vw;
+    }
+
+}
+
+/* p5 */
+
+.p6 {
+    background-color: black;
+    color: white;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.p6 .titleBigs {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.p6 img {
+    margin: 5px 10px;
+    width: 100%;
+    max-width: 140px;
+}
+
+.entreE {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+@media (max-width: 700px) {
+    .entreE {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .p6 img {
+        max-width: 400px;
+    }
+}
+
+/* whatIs */
+
+
+.whatIs {
+    background-color: white;
+    color: #000000;
+    width: 100%;
+    padding: 10px;
+}
+
+.whatIs .titleWt {
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    padding: 40px 0px;
+    margin: auto;
+}
+
+.whatIs strong {
+    font-size: 28px;
+    text-align: center;
+}
+
+.trainersList {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    font-family: 'Montserrat', sans-serif !important;
+    padding: 10px 0px;
+}
+
+@media (max-width: 700px) {
+    .trainersList {
+        grid-template-columns: auto;      
+    }
+}
+
+.trainer {
+    text-align: center;
+    line-height: 28px;
+    font-size: 20px;
+    margin: 15px;
+}
+
+.titleTraning {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+.iconTR {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.iconTR img {
+    width: 60px;
+
+}
+
+
+/* .freeB */
+
+.freeB {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+}
+
+
+.titleFreeb {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.freeB .ico {
+    display: flex;
+    justify-content: center;
+}
+
+
+.onef {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif !important;
+    line-height: 25px;
+}
+
+.onefrees {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 50px 0px;
+}
+
+
+
+@media (max-width: 750px) {
+    .onefrees {
+        grid-template-columns: auto;      
+    }
+}
+
+.freeB .titleOne {
+    font-weight: bold;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.onef .of {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.of span {
+    text-decoration:line-through;
+    color: red;
+}
+
+.onef .per {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.per span {
+    color: rgb(2, 179, 2);
+}
