@@ -6,6 +6,59 @@
     line-height: 29px;
 }
 
+.whatsButton {
+    padding: 0px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    z-index: 2;
+}
+
+.whatsButton:hover .speekMe {
+    display: block;
+}
+
+
+.whatsButton .whats {
+    background-color: rgba(0, 128, 0, 0.932);
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whats img {
+    width: 30px;
+}
+
+
+.speekMe {
+    background-color: red;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 0px 10px;
+    margin-right: 5px;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+    animation: speekMe 400ms ease-out alternate infinite;
+    display: none;
+    user-select: none;
+    border: 1px solid white;
+}
+
+@keyframes speekMe {
+    to {
+        transform: translate(-10px);
+    }
+}
+
+
 header {
     padding: 50px 40px 30px 40px;
     display: flex;
@@ -237,9 +290,17 @@ main {
 .iconExt .icoP4 {
     width: 120px;
     height: 120px;
-    background-color: #EFDD05;
+    background-color: #f7f7f7;
     border-radius: 100%;
     flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 13px rgba(0, 0, 0, 0.315);
+}
+
+.icoP4 img {
+    width: 70px;
 }
 
 .titleP4 {
@@ -401,6 +462,15 @@ main {
 }
 
 .trainersList {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif !important;
+    padding: 10px 0px;
+}
+
+.trIn {
+    max-width: 1100px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     font-family: 'Montserrat', sans-serif !important;
@@ -408,7 +478,7 @@ main {
 }
 
 @media (max-width: 700px) {
-    .trainersList {
+    .trIn {
         grid-template-columns: auto;      
     }
 }
@@ -443,7 +513,7 @@ main {
 .freeB {
     max-width: 1100px;
     margin: auto;
-    padding: 30px;
+    padding: 5px;
 }
 
 
@@ -464,6 +534,8 @@ main {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif !important;
     line-height: 25px;
+    padding: 20px;
+    padding-right: 10px;
 }
 
 .onefrees {
@@ -474,7 +546,7 @@ main {
 
 
 
-@media (max-width: 750px) {
+@media (max-width: 950px) {
     .onefrees {
         grid-template-columns: auto;      
     }
@@ -504,4 +576,314 @@ main {
 
 .per span {
     color: rgb(2, 179, 2);
+}
+
+.limitedV {
+    margin: auto;
+}
+
+.limitedE {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: red;
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.warningA {
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.warnIn {
+    max-width: 900px;
+}
+
+.warningA * {
+    line-height: 40px;
+}
+
+.warningA strong {
+    text-decoration: underline;
+}
+
+/* lastBarInfo */
+
+.lastBarInfo {
+    color: rgba(255, 255, 255, 0.950);
+    width: 100%;
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lastBarInfo .inLast {
+    max-width: 900px;
+    text-align: center;
+}
+
+.inLast p {
+    margin: 50px 0px;
+    font-size: 24px;
+}
+
+.lastBarInfo .Lof {
+    text-decoration: line-through;
+    color: rgb(255, 50, 50);
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.lastBarInfo .Lper  {
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+
+.lastBarInfo .Lper .p2L{
+    color: rgb(0, 218, 0);
+}
+
+/* time */
+
+
+.timesNew {
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.oferTime {
+    width: 100%;
+    max-width: 700px;
+}
+
+
+.titleTime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 35px;
+}
+
+.titleTime strong {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.titleTime span {
+    font-size: 25px;
+}
+
+.butonsTime {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.butonsTime .btnT {
+    width: 100%;
+    height: 130px;
+    background-color: red;
+    margin: 20px;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vw;
+    font-weight: bold;
+    color: white;
+    animation: btnsT 400ms alternate infinite;
+    animation-delay: 300ms;
+}
+
+@media (min-width: 900px){
+    .btnT {
+        font-size: 70px !important;
+    }
+}
+
+@keyframes btnsT {
+    to {
+        transform: scale(.995);
+    }
+}
+
+/* helpMe */
+
+.helpMe {
+    background-color: black;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tHelp {
+    font-size: 25px;
+    padding: 20px 0px;
+}
+
+.inHelp {
+    max-width: 500px;
+    width: 100%;
+}
+
+.helpMe details {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 2px solid grey;
+}
+
+.helpMe details .dataD {
+    background-color: rgba(128, 128, 128, 0.233);
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+
+details summary {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    padding: 12px;
+}
+
+.helpMe * {
+    line-height: 25px;
+}
+
+/* promo */
+
+body {
+    overflow: initial;
+}
+
+.promo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 3;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.418);
+    padding: 20px;
+    display: none;
+}
+
+@keyframes promo {
+    from {
+        transform: scale(.1);
+    }
+}
+
+.promoin {
+    background-color: rgb(0, 218, 0);
+    border-radius: 4px;
+    max-width: 800px;
+    box-shadow: 1px 2px 13px rgba(0, 0, 0, 0.452);
+    padding: 30px;
+    animation:promo 300ms linear;
+}
+
+.promoin .close {
+    display: flex;
+    justify-content: flex-end;
+    transform: translate(15px, -20px);
+    user-select: none;
+}
+
+
+.promoin button {
+    animation: btnC 400ms linear alternate infinite;
+}
+
+
+@keyframes btnC {
+    to {
+        transform: scale(.99);
+    }
+}
+
+.promo .closein {
+    background-color: red;
+    width: 30px;
+    height: 25px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.promoin .orangeTn {
+    font-size: 26px;
+    text-align: center;
+    line-height: 40px;
+    color:rgb(0, 47, 255);
+}
+
+.promo strong {
+    color: red;
+    font-weight: bolder;
+}
+
+.p1promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p1promo strong.orangeT {
+    font-size: 30px;
+}
+
+.p1promo h1 {
+    padding-top: 20px;
+}
+
+.p1promo .per {
+    font-size: 25px;
+    padding: 20px 0px;
+    font-weight: bold;
+}
+
+.p1promo .per span {
+    color: red;
+}
+
+.p2promo button {
+    background-color: red;
+}
+
+/* termos */
+
+.termos {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
 }
