@@ -77,7 +77,7 @@ function z___restartAll() {
 
 /* promp exit */
 var prompt_data = 0
-var time_start = 10
+var time_start = 30
 
 var promptINter = setInterval(() => {
     prompt_data++

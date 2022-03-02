@@ -33,6 +33,14 @@
     align-items: center;
 }
 
+.whatsButton a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
 .whats img {
     width: 30px;
 }
@@ -356,6 +364,10 @@ main {
     width: 100%;
     max-width: 900px;
     margin: auto;
+}
+
+.depoiment {
+    margin-top: 40px;
 }
 
 
