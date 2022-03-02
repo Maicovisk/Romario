@@ -876,7 +876,8 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 50px;
-    height: 100px;
+    height: 120px;
+    padding-top: 50px;
     font-weight: bold;
     flex-direction: column;
     line-height: 90px;
@@ -916,4 +917,25 @@ body {
 
 .copy {
     font-weight: bolder;
+}
+
+
+/* email de suporte */
+
+.support {
+    border-top: 1px solid grey;
+    padding: 20px 10px;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.support a {
+    color: white;
+}
+
+@media (max-width: 500px){
+    .support {
+        font-size: 13px;
+    }
 }

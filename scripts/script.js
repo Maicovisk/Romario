@@ -77,7 +77,7 @@ function z___restartAll() {
 
 /* promp exit */
 var prompt_data = 0
-var time_start = 30
+var time_start = -1 //30  / -1 = disabled
 
 var promptINter = setInterval(() => {
     prompt_data++
@@ -86,31 +86,6 @@ var promptINter = setInterval(() => {
     }
 }, 1000);
 
-
-document.body.addEventListener('mousemove', exitF)
-async function exitF(e) {
-    let pro = localStorage.getItem('prompt')
-    if (!pro){
-        if (e.y <= 20 && prompt_data >= time_start) {
-            promoStart()
-            localStorage.setItem('prompt', true)
-        }
-    }
-}
-
-
-function promoStart(){
-    document.body.style.overflow = 'hidden'
-    let promo = document.querySelector('.promo')
-    promo.style.display = 'flex'
-}
-
-
-function closePrompt() {
-    let promo = document.querySelector('.promo')
-    document.body.style.overflow = 'initial'
-    promo.style.display = 'none'
-}
 
 
 /* speekMe */
