@@ -114,3 +114,12 @@ function closePrompt() {
 
 
 /* speekMe */
+
+
+function anual(){
+    let anoT = new Date()
+    let ano = document.querySelector('.ano')
+    ano.innerText = anoT.getFullYear()
+}
+
+anual()

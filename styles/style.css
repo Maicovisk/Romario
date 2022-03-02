@@ -774,11 +774,13 @@ main {
 }
 
 
+
 details summary {
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     padding: 12px;
+    transition: all 200ms linear;
 }
 
 .helpMe * {
@@ -898,4 +900,19 @@ body {
     align-items: center;
     width: 100%;
     padding: 20px;
+    text-align: center;
+}
+
+.termos h1 {
+    font-size: 23px;
+}
+
+.termoList {
+    text-align: center;
+    max-width: 800px;
+}
+
+
+.copy {
+    font-weight: bolder;
 }
